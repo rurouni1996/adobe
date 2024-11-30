@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.header-img{
+    width: 50px;
+    height: auto;
+}
+
+.header-title{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fa0f00;
+    margin-top: .5rem;
+}
+
+.nav-ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-li{
+    width: 33.333%;
+}
+
+.nav-btn{
+    display: block;
+    background-color: gray;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 100px;
+    transition-duration: .3s;
+}
+
+.nav-btn:hover{
+    opacity: .7;
+}
+
+.nav-btn-acrobat{
+    background-color: #333;
+}
+
+.nav-btn-premiere{
+    background-color: #dd1f8e;
+}
+
+.nav-btn-photoshop{
+    background-color: #00a7e2;
+}
+
+.nav-btn-after-effects{
+    background-color: #620294;
+}
+
+.nav-btn-illustrator{
+    background-color: #ee9a10;
+}
+
+.nav-btn-dreamweaver{
+    background-color: #84c922;
+}

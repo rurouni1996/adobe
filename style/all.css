@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+a{
+    outline: none;
+}
