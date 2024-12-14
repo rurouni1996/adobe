@@ -68,6 +68,7 @@ background-color: yellow;
 
 .card{
     position: relative;
+    -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0 , .3) 0, transparent 50%);
 }
 
 .card-body:hover{
@@ -125,3 +126,38 @@ background-color: yellow;
 .hover-zoom-in:hover .fas{
     transform: scale(1);
 }
+
+@media screen and (max-width: 1024px) {
+    .article{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        top:0;
+        left:0;
+        margin-top: 0;
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .nav-active{
+        background-color: rgba(0, 0, 0, .3);
+    }
+    .article{
+        padding: 4rem 2rem 2rem;
+        width: auto;
+    }
+    .article-head{
+        text-align: center;
+    }
+    .grid-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
