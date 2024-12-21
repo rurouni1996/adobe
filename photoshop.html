@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="./style/master.css">
     <link rel="stylesheet" href="./style/ps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" id="Nav">
     <a class="nav-btn nav-btn-index" href="./">index</a>
     <a class="nav-btn" href="./acrobat.html">acrobat</a>
     <a class="nav-btn" href="./premiere.html">premiere</a>
@@ -41,8 +42,15 @@
         <p class="article-desc">全球數以百萬計的設計師、攝影師和藝術家都使用 Photoshop，讓不可能的影像得以實現。</p>
     </div>
     <div class="article-body">
-        <div class="grid grid-3">
-            <a href="https://blog.adobe.com/en/topics/photoshop" target="_blank">
+        <div class="grid" id="Grid">
+            <a href="https://blog.adobe.com/en/topics/photoshop" 
+            target="_blank"
+            data-fancybox="ps"
+            data-caption="Adobe Blog"
+            data-width="1200"
+            data-height="800"
+            data-type="iframe">
+            
                 <div class="card hover-fade-in hover-zoom-in">
                     <div class="card-head">
                         <img class="card-img" src="./images/ps-1-sm.png" height="141" width="250" alt="Adobe Blog">
@@ -51,7 +59,13 @@
                 </div>
             </a>
 
-            <a href="4" target="_blank">
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4633349882884!2d121.51167837589563!3d25.05228043755421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96ccd2730c9%3A0x8e39d5c657c5fd44!2z5aSp6b6N5LiJ5rqr5pqW!5e0!3m2!1szh-TW!2stw!4v1734779567553!5m2!1szh-TW!2stw" 
+            target="_blank"
+            data-fancybox="ps"
+            data-caption="學習地點 - 站前學院"
+            data-width="1200"
+            data-height="800"
+            data-type="iframe">
                 <div class="card hover-fade-in hover-zoom-in">
                     <div class="card-head">
                         <img class="card-img" src="./images/ps-2-sm.png" height="141" width="250" alt="學習地點 - 站前學院">
@@ -60,7 +74,13 @@
                 </div>
             </a>
 
-            <a href="https://www.ortwin-oberhauser.com/pdfs/google_seo-starter-guide.pdf" target="_blank">
+            <a href="https://www.ortwin-oberhauser.com/pdfs/google_seo-starter-guide.pdf" 
+            target="_blank"
+            data-fancybox="ps"
+            data-caption="SEO 文件"
+            data-width="1200"
+            data-height="800"
+            data-type="iframe">>
                 <div class=" card hover-fade-in hover-zoom-in">
                     <div class="card-head">
                         <img class="card-img" src="./images/ps-3-sm.png" height="141" width="250" alt="SEO 文件">
@@ -72,6 +92,8 @@
         </div>
     </div>
 </article>
-  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/master.js"></script>
 </body>
 </html>
